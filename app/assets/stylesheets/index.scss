@@ -1,0 +1,26 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.menuAcciones{
+    i{
+        font-size: 28px;
+    }
+}
+
+
+.listadoJuegos{
+    td{
+        width:16.6%!important;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    .user{
+        
+        img{
+            width: 40%;
+            margin: 10px 30%;
+        }
+    }
+}
