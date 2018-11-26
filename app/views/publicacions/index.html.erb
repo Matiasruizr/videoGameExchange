@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<div class="consulta p-5 container">
+  <h1>Publicacions</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Nombrejuegoofrece</th>
+        <th>Nombrejuegobusca</th>
+        <th>Comentarios</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @publicacions.each do |publicacion| %>
+        <tr>
+          <td><%= publicacion.usuario %></td>
+          <td><%= publicacion.nombreJuegoOfrece %></td>
+          <td><%= publicacion.nombreJuegobusca %></td>
+          <td><%= publicacion.comentarios %></td>
+          <td><%= link_to 'Show', publicacion %></td>
+          <td><%= link_to 'Edit', edit_publicacion_path(publicacion) %></td>
+          <td><%= link_to 'Destroy', publicacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Publicacion', new_publicacion_path %>
+</div>

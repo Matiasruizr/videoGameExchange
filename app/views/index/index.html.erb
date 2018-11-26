@@ -38,21 +38,18 @@
                     </tr>
                   </tfoot>
                   <tbody class="listadoJuegos">
-                    <tr>
-                      <td class="user"><img src="/static/img/perfil/friky.jpg" class="rounded"/>ElDylan666</td>
-                      <td>God of war</td>
-                      <td > <img src="/static/img/juegos/godofwar.jpg" /></td>
-                      <td>Spider man</td>
+                
+                    <% Publicacion.all.collect {|p| %>
+                     <tr>
+                      <td class="user"><img src="/static/img/perfil/friky.jpg" class="rounded"/> <%= p.usuario %></td>
+                      <td><%= p.nombreJuegoOfrece %></td>
+                      <td><img src="/static/img/juegos/godofwar.jpg" /></td>
+                      <td><%= p.nombreJuegobusca %></td>
                       <td ><img src="/static/img/juegos/spiderman.jpg"/></td>
                       <td><button type="button" class="btn btn-success">Contactar</button></td>
                     </tr>
-                      <td class="user"><img src="/static/img/perfil/friky.jpg" class="rounded"/>Cami_Lazo</td>
-                      <td>Spider man</td>
-                      <td > <img src="/static/img/juegos/spiderman.jpg" /></td>
-                      <td>God of war</td>
-                      <td ><img src="/static/img/juegos/godofwar.jpg"/></td>
-                      <td><button type="button" class="btn btn-success">Contactar</button></td>
-                    </tr>
+                    <% } %>
+                   
                     
                  
                   </tbody>

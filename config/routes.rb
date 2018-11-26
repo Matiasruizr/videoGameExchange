@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :publicacions
+  resources :games
   get 'index/index'
   resources :regions
   resources :provincia

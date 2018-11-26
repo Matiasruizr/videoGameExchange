@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @publicacion.usuario %>
+</p>
+
+<p>
+  <strong>Nombrejuegoofrece:</strong>
+  <%= @publicacion.nombreJuegoOfrece %>
+</p>
+
+<p>
+  <strong>Nombrejuegobusca:</strong>
+  <%= @publicacion.nombreJuegobusca %>
+</p>
+
+<p>
+  <strong>Comentarios:</strong>
+  <%= @publicacion.comentarios %>
+</p>
+
+<%= link_to 'Edit', edit_publicacion_path(@publicacion) %> |
+<%= link_to 'Back', publicacions_path %>
